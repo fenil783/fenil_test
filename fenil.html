@@ -1,0 +1,47 @@
+<html>
+<head>
+<style>
+button{
+heigth:300px;
+width:100px;
+}
+img{
+height:300px;
+width:400px;
+}
+
+</style>
+</head>
+
+<body>
+<div  style="text-align:center">
+<button type="button" id="black" onClick="func('black')" name="black.jpeg" value="black">black</button>
+<button type="button" id="blue" onClick="func('blue')"  name="blue.jpeg" value="blue"/>blue</button>
+<button type="button" id="gold" name="gold.jpeg" onClick="func('gold')"  value="gold"/>gold</button>
+<button type="button" id="rose-gold" name="rose-gold.jpeg" onClick="func('rose-gold')"  value="rose-gold"/>rose-gold</button>
+</br>
+</div>
+
+<div style="text-align:center;margin-top:100px">
+
+<div id="div-1">
+
+<img id="img" src="black.jpeg" /></br>
+<h1 id="txt">black</h1>
+</div>
+
+
+<script>
+
+function func(res)
+{
+var r=document.getElementById(res).name;
+    document.getElementById("img").src = r;
+	document.getElementById("txt").innerHTML = res;
+	
+}
+
+</script>
+
+</body>
+</html>
